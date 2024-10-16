@@ -1,21 +1,124 @@
-header {
-  margin-left: 50%;
-  margin-right: 50%;
+
+
+
+
+
+/* font style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400..800&display=swap');
+
+
+/* all */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+  background-image: none;
 }
-header h2 {
+
+/* color */
+:root{
+  --white: #fff;
+  --black: #000;
+  --orange: rgb(249, 129, 105);
+  --black1: rgb(13, 7, 5);
+  --red:rgb(221, 75, 59);
+  --orange1: rgb(225, 96, 58);
+}
+
+
+/* nav top */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+header h2{
+  font-family: 'Baloo Chettan 2';
   font-size: 36px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
+  cursor: pointer;
 }
-header nav ul li {
+.login{
+  font-size: 17px;
+  color: var(--black);
+}
+.nav-link{
+  flex: 1;
+}
+.nav-top ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 0px 20px;
+  position: relative;
+}
+.nav-top ul li a{
+  color: var(--black);
+  text-decoration: none;
+}
+.nav-top ul li::after{
+  content: ' ';
+  width: 0%;
+  height: 2px;
+  background-color: var(--orange);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-top ul li:hover::after{
+  width: 100%;
+}
+.arrow1 img{
+  cursor: pointer;
+  width: 20px;
+}
+.arrow2 img{
+  transform: rotate(180deg);
+  cursor: pointer;
+  width: 20px;
+  background-color: var(--black1);
+}
+
+nav ul img{
+  width: 15px;
+  margin: 0px 15px;
+  cursor: pointer;
+}
+
+
+/* Top section */
+.container{
+  padding: 30px 10%;
+}
+.wl{
+  font-size: 50px;
+}
+.fs{
+  color: var(--orange);
+  font-size: 100px;
+}
+section button.buy{
   display: inline-block;
   text-decoration: none;
-  text-align: center;
+  color: var(--white);
+  background-color: var(--black1);
+  border: 1px solid var(--black1);
+  border-radius: 30px;
+  margin-top: 50px;
+  padding: 10px 110px;
   font-size: 17px;
-  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  cursor: pointer;
 }
-section,
-p {
+section button.buy:hover{
+  border: 1px solid var(--black);
+  background: var(--orange);
+  transition: 1s;
+}
+
+/* section */
+/*p {
   text-align: center;
 }
 section {
@@ -37,4 +140,4 @@ button {
 }
 .Button {
   border-radius: 12px;
-}
+}*/
