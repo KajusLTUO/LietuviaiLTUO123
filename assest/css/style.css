@@ -457,3 +457,68 @@ nav .fa-solid{
     padding: 30px;
   }
 }
+.wow {
+  text-align: center;
+  color: white;
+  border-style: solid;
+}
+.description{
+  text-align: center;
+  padding: 75mm;
+}
+
+.description h1{
+  font-size: 38px;
+  margin: 10mm;
+}
+.description{
+  border: solid;
+  border-color: white;
+  margin: 250px;
+  margin-top: 250px;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+.description p{
+  font-size: 20px;
+}
+.ContactUs{
+  text-align: center;
+  padding-right: 700px;
+  padding-left: 700px;
+  margin: 10mm;
+}
+.ContactUs, h1{
+  margin: 10mm;
+}
+input[type=text], textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin: 10px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=tel]{
+  margin-bottom: 16px;
+  resize: vertical;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin: 10px
+}
+input[type=submit] {
+  background-color: white;
+  color: red;
+  padding: 18px 60px;
+  border: 1px solid red;
+  border-radius: 30px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+background-color: red;
+color: white;
+}
